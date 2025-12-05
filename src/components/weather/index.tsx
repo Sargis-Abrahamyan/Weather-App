@@ -7,8 +7,6 @@ import SelectedDate from "./selectedDate/SelectedDate";
 import useWeatherLogic from "./useWeatherLogic";
 import styles from './weather.module.css';
 
-
-
 export default function Weather() {
     const { city, list, loading, error } = useAppSelector(state => state.weather);
     const { selectedDate, selectedDateKey, applied, handleSelectedDate } = useWeatherLogic({ list });
