@@ -1,7 +1,7 @@
 import { DEFAULT_TEXT } from "../../constants";
 import { useAppSelector } from "../../store/useReduxStore";
 import type { Weather } from "../../types/weather";
-import WeatherCards from "./WeatherCards/WeatherCards";
+import WeatherCards from "./weatherCards/WeatherCards";
 import MainWeatherCard from "./mainWeatherCard/MainWeatherCard";
 import SelectedDate from "./selectedDate/SelectedDate";
 import useWeatherLogic from "./useWeatherLogic";
