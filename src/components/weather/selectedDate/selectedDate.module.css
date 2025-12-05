@@ -1,0 +1,52 @@
+.selected__date {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 14px;
+    row-gap: 16px;
+}
+
+.date__item {
+    display: flex;
+    align-items: center;
+    column-gap: 23px;
+    padding: 14px 18px;
+    background: #ffffff;
+    border: 1px solid #e3e6ee;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: all 0.25s ease-in-out;
+}
+
+.date__item:hover {
+    background: #f3f7ff;
+    border-color: #b9ccff;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 80, 255, 0.15);
+}
+
+.date__item p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+    color: #2d2f36;
+}
+
+.time__item,
+.temp__item {
+    font-size: 14px;
+    padding: 4px 10px;
+    border-radius: 8px;
+    font-weight: 500;
+}
+
+.time__item {
+    background: #eef2ff;
+    color: #3d47ff;
+    border: 1px solid #d4ddff;
+}
+
+.temp__item {
+    background: #ffecec;
+    color: #d32f2f;
+    border: 1px solid #f5c2c2;
+}

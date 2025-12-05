@@ -1,0 +1,33 @@
+.card__Container {
+    width: 100%;
+    display: flex;
+    gap: 16px;
+    padding: 20px;
+}
+
+.card {
+    flex: 1;
+    cursor: pointer;
+    background: linear-gradient(135deg, #6dd5fa, #2980b9);
+    color: white;
+    border-radius: 18px;
+    padding: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+}
+
+.temp {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.time {
+    font-size: 14px;
+    opacity: 0.9;
+}

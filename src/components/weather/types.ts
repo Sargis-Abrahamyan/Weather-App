@@ -1,0 +1,1 @@
+export interface Applied { date: string; averageTemp: number }
