@@ -1,4 +1,4 @@
-export const DateHelper = (dateValue: string) => {
+export const DateHelper = (dateValue: string):string => {
     const date = new Date(dateValue);
 
     const day = date.getDate().toString().padStart(2, '0');

@@ -1,20 +1,11 @@
-import { FORECAST } from '../../../constants';
-import { setCity } from '../../../store/weatherSlice';
-import { fetchWeatherByCity } from '../../../store/fetchWeatherByCity';
-import { useAppDispatch, useAppSelector } from '../../../store/useReduxStore';
+
+import { useAppSelector } from '../../../store/useReduxStore';
+import useSearchBar from './useSearchBar';
 import styles from './SearchBar.module.css';
 
 export default function SearchBar() {
 	const { cityName } = useAppSelector((state) => state.weather);
-	const dispatch = useAppDispatch();
-
-	const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-		dispatch(setCity(e.target.value));
-	};
-
-	const handleSearch = async () => {
-		await dispatch(fetchWeatherByCity({ city: cityName, type: FORECAST }));
-	}
+	const { handleChange, handleSearch } = useSearchBar(cityName)
 
 	return (
 		<div className={styles.search__bar}>
