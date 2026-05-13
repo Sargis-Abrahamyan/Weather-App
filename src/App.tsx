@@ -9,9 +9,7 @@ function App() {
   const dispatch = useAppDispatch();
 
   useEffect(() => {
-    (async () => {
-      await dispatch(fetchWeatherByCity({ city: 'Yerevan', type: FORECAST }));
-    })();
+  dispatch(fetchWeatherByCity({ city: 'Yerevan', type: FORECAST }))
   }, [dispatch]);
 
   return (
